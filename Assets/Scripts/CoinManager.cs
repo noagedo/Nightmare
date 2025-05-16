@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using TMPro; // חשוב! מחלקת TextMeshPro
+using TMPro;
 
 public class CoinManager : MonoBehaviour
 {
     public static CoinManager instance;
 
     public int coinCount = 0;
-    public TextMeshProUGUI coinText; // ← שינוי לסוג TextMeshProUGUI
+    public TextMeshProUGUI coinText; 
 
     void Awake()
     {

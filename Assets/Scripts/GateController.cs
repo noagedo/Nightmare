@@ -8,7 +8,7 @@ public class GateController : MonoBehaviour
 
     void Start()
     {
-        // הפעלת האנימציה של פתיחת הדלת ברגע שהמשחק מתחיל
+        
         doorAnim.SetTrigger("open");
         toggle = true;
     }

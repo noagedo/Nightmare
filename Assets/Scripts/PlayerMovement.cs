@@ -22,12 +22,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // בדיקה אם על הקרקע
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f; // ערך קטן כדי להצמיד לקרקע
+            velocity.y = -2f; 
         }
 
         float moveX = Input.GetAxis("Horizontal");
