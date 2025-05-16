@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(direction * speed * Time.deltaTime);
 
-        // הוספת כבידה
+        
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
