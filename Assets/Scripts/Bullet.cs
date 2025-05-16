@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        // ניגון סאונד ירייה
+        
         if (shootSound != null)
         {
             AudioSource.PlayClipAtPoint(shootSound, transform.position);
@@ -25,19 +25,19 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Zombie"))
         {
-            // אפקט פיצוץ
+            
             Instantiate(explosionEffect, other.transform.position, Quaternion.identity);
 
-            // ניגון סאונד פיצוץ
+            
             if (explosionSound != null)
             {
                 AudioSource.PlayClipAtPoint(explosionSound, other.transform.position);
             }
 
-            // יצירת מטבע
+           
             Instantiate(coinPrefab, other.transform.position, Quaternion.identity);
 
-            // השמדת הזומבי והכדור
+            
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

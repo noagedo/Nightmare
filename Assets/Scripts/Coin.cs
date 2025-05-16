@@ -6,8 +6,8 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            CoinManager.instance.AddCoin(); // ← עדכון הספירה
-            Destroy(gameObject);           // השמדת המטבע
+            CoinManager.instance.AddCoin(); 
+            Destroy(gameObject);           
         }
     }
 }
