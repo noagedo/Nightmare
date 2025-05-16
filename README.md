@@ -26,4 +26,4 @@ The game begins with a main menu scene. Once the player starts the game, it tran
 ## 👥 Created By
 
 - Yuval Ben Shitrit
-- Noa Gado
+- Noa Gedo
